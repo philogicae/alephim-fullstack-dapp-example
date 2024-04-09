@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply antialiased;
+}
+
+html {
+  @apply font-sans flex w-full h-full;
+  background: #000000;
+}
+
+body {
+  @apply absolute h-full w-full overflow-hidden tracking-tighter text-white;
+  background: radial-gradient(circle, #1c089c -100%, #000000 100%) center/cover
+    no-repeat;
+}
+
+.manual-y-center::before,
+.manual-y-center::after {
+  content: '';
+  margin: auto;
+}
